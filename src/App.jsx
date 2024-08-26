@@ -1,10 +1,13 @@
-import Home from './routes/Home'
-import Aluno from './routes/Aluno'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import {Outlet} from 'react-router-dom'
 function App() {
   return (
     <>
-     <Home/>
-     <Aluno/>
+    <Nav/>
+    {/*chamando todos os elementos filhos*/}
+    <Outlet/>
+    <Footer/>
     </>
   )
 }
