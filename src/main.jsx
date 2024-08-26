@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Error from './routes/Error.jsx'
 import Home from './routes/Home.jsx'
 import Aluno from './routes/Aluno.jsx'
+import Pagina1 from './routes/Pagina1.jsx'
 
 
 
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
     //Chamando elemento filho
     children:[
       {path:'/',element:<Home/>},
-      {path: '/Aluno',element:<Aluno/>}
+      {path: '/Aluno',element:<Aluno/>},
+      {path: '/Pagina1',element:<Pagina1/>},
     ]
   }
 ])
